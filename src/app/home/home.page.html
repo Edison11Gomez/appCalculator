@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="12" class="display">
+        {{ display }}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      @for (btn of buttons.slice(0, 4); track btn.value) {
+        <ion-col
+          size="3"
+          class="col-test"
+          (click)="onPress(btn)">
+          {{ btn.label }}
+        </ion-col>
+      }
+    </ion-row>
+
+    <ion-row>
+      @for (btn of buttons.slice(4, 8); track btn.value) {
+        <ion-col
+          size="3"
+          class="col-test"
+          (click)="onPress(btn)">
+          {{ btn.label }}
+        </ion-col>
+      }
+    </ion-row>
+
+    <ion-row>
+      @for (btn of buttons.slice(8, 12); track btn.value) {
+        <ion-col
+          size="3"
+          class="col-test"
+          (click)="onPress(btn)">
+          {{ btn.label }}
+        </ion-col>
+      }
+    </ion-row>
+
+    <ion-row>
+      @for (btn of buttons.slice(12, 16); track btn.value) {
+        <ion-col
+          size="3"
+          class="col-test"
+          (click)="onPress(btn)">
+          {{ btn.label }}
+        </ion-col>
+      }
+    </ion-row>
+
+    <ion-row>
+      @for (btn of buttons.slice(16, 20); track btn.value) {
+        <ion-col
+          size="3"
+          class="col-test"
+          (click)="onPress(btn)">
+          {{ btn.label }}
+        </ion-col>
+      }
+    </ion-row>
+
+    <ion-row>
+      <ion-col
+        size="12"
+        class="col-test equal"
+        (click)="onPress(buttons[20])">
+        =
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

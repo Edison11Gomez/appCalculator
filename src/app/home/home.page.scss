@@ -1,0 +1,146 @@
+ion-content {
+  --background: #000000;
+}
+
+ion-header {
+  --background: #000000;
+}
+
+ion-toolbar {
+  --background: #000000;
+  --color: white;
+  --border-width: 0;
+}
+
+ion-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+ion-grid {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px 12px 30px;
+  margin: 0 auto;
+}
+
+.display {
+  height: 150px;
+  margin-bottom: 12px;
+  padding: 10px 8px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  background: #000000;
+  color: white;
+
+  border-radius: 0;
+
+  font-size: 64px;
+  font-weight: 300;
+
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  text-align: right;
+}
+
+ion-row {
+  margin-bottom: 10px;
+}
+
+.col-test {
+  height: 72px;
+  margin: 0;
+  padding: 0 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #333333;
+  color: white;
+
+  font-size: 25px;
+  font-weight: 400;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.08s ease,
+    opacity 0.08s ease;
+}
+
+.col-test::after {
+  content: '';
+  position: absolute;
+}
+
+.col-test:active {
+  transform: scale(0.90);
+  opacity: 0.65;
+}
+
+ion-row:nth-child(2) .col-test,
+ion-row:nth-child(3) .col-test,
+ion-row:nth-child(4) .col-test,
+ion-row:nth-child(5) .col-test {
+  background: #333333;
+  color: white;
+  box-shadow: none;
+}
+
+ion-row:nth-child(6) .col-test {
+  background: #a5a5a5;
+  color: #000000;
+}
+
+ion-row:nth-child(6) .col-test:nth-child(1),
+ion-row:nth-child(6) .col-test:nth-child(2),
+ion-row:nth-child(6) .col-test:nth-child(3) {
+  background: #a5a5a5;
+  color: #000000;
+}
+
+ion-row:nth-child(2) .col-test:last-child,
+ion-row:nth-child(3) .col-test:last-child,
+ion-row:nth-child(4) .col-test:last-child,
+ion-row:nth-child(5) .col-test:last-child {
+  background: #ff9500;
+  color: white;
+}
+
+.equal {
+  height: 58px;
+
+  background: #ff9500;
+  color: white;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  font-size: 28px;
+  font-weight: 500;
+
+  box-shadow: none;
+
+  justify-content: center;
+  padding-right: 0;
+
+  transition:
+    transform 0.08s ease,
+    opacity 0.08s ease;
+}
+
+.equal:active {
+  background: #cc7700;
+  transform: scale(0.96);
+  opacity: 0.8;
+}
